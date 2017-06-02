@@ -27,15 +27,16 @@ Three sizes for the buttons: small, medium (default) and big.
 ```
 */
 
-.button, 
+.button,
 button.button,
 a.button {
   display: inline-block;
-  padding: rem-calc(5 12);
+  padding: rem-calc(24 48);
   background-color: #eee;
-  border: 1px solid #ccc;
-  color: #333;
-  font-size: rem-calc(14);
+  border: none;
+
+  font-size: rem-calc(18);
+  color: #FFFFFF;
   line-height: rem-calc(24);
   white-space: nowrap;
   vertical-align: middle;
@@ -49,53 +50,43 @@ a.button {
   &:focus:hover,
   &:hover,
   &:active {
-    color: #000;
-    border-color: #666;
     background-color: #f5f5f5;
   }
-  &.is-primary {
-    padding: rem-calc(6 12);
-    background-color: $color-primary;
-    border: none;
-    color: white;
-    
-    &:focus,
-    &:focus:hover,
-    &:hover,
-    &:active {
-      background-color: $color-secondary;
-    }
-  }
-  &.is-big {
-    padding: rem-calc(11 24);
-    font-size: rem-calc(18);
-  }
-  &.is-primary.is-big {
-    padding: rem-calc(12 24);
-  }
-  &:disabled,
-  &.is-disabled {
-    color: #aaa;
-    background-color: #ddd;
-    cursor: not-allowed;
-  }
-}
 
-.button, 
-button.button,
-a.button {
-  &.is-small {
-    padding: rem-calc(3 6);
-    font-size: rem-calc(12);
-  }
-  &.is-primary.is-small {
-    padding: rem-calc(2 6);
-  }
-  .button.is-big {
-    padding: rem-calc(11 24);
-    font-size: rem-calc(18);
-  }
-  &.is-primary.is-big {
-    padding: rem-calc(12 24);
+  &.is-cta {
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(-180deg, #EA5F51 0%, #E54A4A 100%);
+    border: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+    margin-top: rem-calc(48);
+    transition: all 300ms ease-in-out;
+
+    @include susy-breakpoint($break-large) {
+      margin-top: rem-calc(60);
+    }
+    & > span {
+      display: inline-block;
+    	width: 100%;
+    	height: 100%;
+      transition: all 300ms ease-in-out;
+    }
+    &:hover > span,
+    &:focus > span {
+      transform: translateY(200%);
+    }
+    & > .icon {
+      position: absolute;
+      top: -100%;
+      left: 50%;
+      margin-left: -18px;
+      transition: all 300ms ease-in-out;
+    }
+    &:hover > .icon,
+    &:focus > .icon {
+      top: 50%;
+      margin-top: -12px;
+    }
   }
 }

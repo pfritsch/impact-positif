@@ -15,8 +15,8 @@ $base-font: 16px !default;
 $susy: (
   container: auto,
   container-position: center,
-  columns: 12,
-  gutters: 20/60,
+  columns: 8,
+  gutters: 24/60,
   column-width: 60px
 );
 
@@ -42,7 +42,7 @@ $color-secondary: #418D4B;
 
 // Module
 // ----------------------------------------------
-// Modules are the reusable, modular parts of our design. They are the callouts, the buttons, 
+// Modules are the reusable, modular parts of our design. They are the callouts, the buttons,
 // the products and so on. (Micro elements)
 //
 // /* Example module: Product */
@@ -57,8 +57,10 @@ $color-secondary: #418D4B;
 // @import 'module/panel';
 // @import 'module/product';
 @import 'module/button';
+@import 'module/collapse';
 @import 'module/icon';
 @import 'module/nav';
+@import 'module/skill';
 
 
 // Layout
@@ -71,7 +73,11 @@ $color-secondary: #418D4B;
 @import 'layout/form';
 @import 'layout/grid';
 @import 'layout/header';
-
+.footer {
+  margin-bottom: rem-calc(48);
+  font-size: rem-calc(14);
+  line-height: rem-calc(24);
+}
 
 // Page
 // ----------------------------------------------
@@ -83,7 +89,9 @@ $color-secondary: #418D4B;
 // ----------------------------------------------
 // @import 'layout/home';
 // @import 'layout/contact';
-
+.contact {
+  margin-bottom: rem-calc(72);
+}
 
 // State
 // ----------------------------------------------

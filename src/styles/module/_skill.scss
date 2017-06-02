@@ -1,0 +1,11 @@
+.skill {
+  @include susy-breakpoint($break-large) {
+    @include span(4 of 12);
+    &:last-child {
+      @include omega;
+    }
+  }
+}
+.skill-title {
+
+}

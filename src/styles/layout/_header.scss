@@ -12,16 +12,16 @@ category: Layout
 ```
 */
 
-.header-container {
-  padding: rem-calc(24 0);
+.header {
+  overflow: hidden;
+  padding: 0;
+  background-image: linear-gradient(-180deg, #FFFBF7 0%, #F4EEE8 100%);
 }
 .header-logo {
   text-align: center;
-  margin-top: rem-calc(48);
-  
-  @include susy-breakpoint($break-medium) {
-    float: left;
-    margin-top: 0;
-    text-align: left;
+  margin: rem-calc(48 0 0);
+
+  @include susy-breakpoint($break-large) {
+    margin: rem-calc(120 0 0);
   }
 }

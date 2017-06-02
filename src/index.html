@@ -1,11 +1,12 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8">
-    <title>Frontend Cubie - A little Starter kit for hurry developers</title>
+    <title>Impact Positif - Design collaboratif, centré sur l’utilisateur</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A little Frontend Starter kit with Gulp, Bower, LibSass, Susy, Breakpoint, Autoprefixer, Image optimization, etc. Made by We Are Cube.3">
+    <meta name="description" content="Impact Positif est un collectif de designers indépendants basé en Alsace et spécialisé dans le design graphique, l'expérience utilisateur, l'ergonomie des interfaces et la communication">
+    <meta name="keyword" content="design, UX, UI, ergonomie, interface, applications, web, Alsace, Strasbourg, Mulhouse">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <link rel="apple-touch-icon" sizes="57x57" href="assets/images/apple-icon-57x57.png">
@@ -26,8 +27,10 @@
     <meta name="msapplication-TileImage" content="assets/images/ms-icon-144x144.png">
     <meta name="theme-color" content="#8BA124">
 
-    <link href="//www.google-analytics.com" rel="dns-prefetch">
-    <link href="//ajax.googleapis.com" rel="dns-prefetch">
+    <!-- <link href="//www.google-analytics.com" rel="dns-prefetch">
+    <link href="//ajax.googleapis.com" rel="dns-prefetch"> -->
+
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Raleway:400,600" rel="stylesheet">
 
     <!-- bower:css -->
     <!-- endbower -->
@@ -35,15 +38,15 @@
 
   </head>
   <body class="home">
-    
+
     <!-- Icons SVG Sprite -->
     <div class="is-hidden">
       <!-- inject:svg --><!-- endinject -->
     </div>
 
-    <header class="header-container" role="banner">
+    <header class="header" role="banner">
       <div class="grid-container">
-        <nav class="header-nav nav-horizontal" role="navigation">
+        <!-- <nav class="header-nav nav-horizontal" role="navigation">
           <ul>
             <li>
               <a href="./">Home</a>
@@ -52,66 +55,110 @@
               <a href="./styleguide">Styleguide</a>
             </li>
           </ul>
-        </nav>
-        <div class="header-logo">
-          <a href="./">
-            <img src="assets/images/frontend_cubie.svg" alt="Cubie. The little front-end companion" width="160" height="170">
+        </nav> -->
+        <h1 class="header-logo">
+          <a href="http://impact-positif.fr/">
+            <img src="assets/images/impact-positif.svg" alt="Impact Positif" width="220" height="360">
           </a>
-        </div>
+        </h1>
       </div>
     </header>
 
     <main class="main-container" role="main">
       <section>
         <div class="grid-container">
-          <h1>Cubie</h1>
-          <h2>The little front-end companion</h2>
-          <p>Cubie is an HTML5 starter kit that includes: package and task management, local server with browser synchronization, beautiful auto-generated documentation, styles pre-processor, files minification and images optimisation.</p>
+          <h2>UX/UI Design & Communication</h2>
+          <h3>Design collaboratif, centré sur l’utilisateur</h3>
+          <p>Impact Positif vous accompagne dans la réalisation de votre projet,  en s’assurant à chaque étape d’aller dans la bonne direction.</p>
         </div>
       </section>
       <section>
         <div class="grid-container">
+          <h2>Qui sommes-nous ?</h2>
+          <h3>Un collectif de designer enthousiastes</h3>
           <p>
-            <a href="https://github.com/wearecube/frontend-cubie/archive/master.zip" class="button is-primary is-big">
-              <svg class="icon is-inline"><use xlink:href="#download" /></svg> Download the starter kit
-            </a>
+            <a href="http://fritschpierre.com/" target="_blank">Pierre</a>, un designer à l’écoute pour bien comprendre et visualiser votre idée. <br>
+            <a href="http://www.philippe-roser.fr/">Philippe</a>, un ergonome exigeant pour assurer la qualité de votre projet.<br>
+            <a href="mailto:&#116;&#111;&#114;&#101;&#103;&#114;&#097;&#112;&#104;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"> Guillaume</a>, un graphiste créatif pour rendre votre offre originale et attractive.
           </p>
-          <p>
-            <a href="https://github.com/wearecube/frontend-cubie" class="button">
-              <svg class="icon is-inline"><use xlink:href="#github" /></svg> Fork me on Github
-            </a>
-            <a href="https://twitter.com/WeAreCubeDesign" class="button">
-              <svg class="icon is-inline"><use xlink:href="#twitter" /></svg> Follow us on Twitter
-            </a>
-          </p>
+          <p class="hero">En phase avec vos utilisateurs et vos équipes,<br> nous donnons à votre solution un réel impact positif !</p>
         </div>
       </section>
-      <section>
+      <!-- <section>
         <div class="grid-container">
-          <h2>A collection of tools</h2>
-          <ul>
-            <li><a href="http://gulpjs.com/">Gulp</a></li>
-            <li><a href="http://bower.io/">Bower</a></li>
-            <li><a href="https://html5boilerplate.com/">HTML5 Boilerplate</a></li>
-            <li><a href="http://libsass.org/">LibSass</a></li>
-            <li><a href="http://susy.oddbird.net/">Susy</a></li>
-            <li><a href="http://breakpoint-sass.com/">Breakpoint Sass</a></li>
-            <li><a href="https://github.com/postcss/autoprefixer">Autoprefixer</a></li>
-            <li><a href="http://trulia.github.io/hologram/">Hologram</a></li>
-            <li><a href="http://www.browsersync.io/">BrowserSync</a></li>
-          </ul>
+
+          <article class="skill collapse">
+            <input id="skill-ux" type="checkbox">
+            <label for="skill-ux" onclick>UX Design</label>
+            <div class="collapse-content">
+              <h2 class="skill-title">Amélioration de l'expérience utilisateur</h2>
+              <p>
+                Accompagnement dans la conception, lean UX, design sprints, facilitation, ateliers créatifs, brainstormings, design studio, visualisation, storyboarding, wireframes, prototypes, MVP, tests utilisateurs.
+              </p>
+            </div>
+          </article>
+
+          <article class="skill collapse">
+            <input id="skill-ui" type="checkbox">
+            <label for="skill-ui" onclick>UI Design</label>
+            <div class="collapse-content">
+              <h2 class="skill-title">Ergonomie des interfaces</h2>
+              <p>
+                Design d'interfaces, web et mobiles, responsive webdesign, applications métier, interactions, architecture de l’information, ergonomie, accessibilité. Développement Front-end, intégration HTML/CSS, Javascript.
+              </p>
+            </div>
+          </article>
+
+          <article class="skill collapse">
+            <input id="skill-collapse" type="checkbox">
+            <label for="skill-collapse" onclick>Communication</label>
+            <div class="collapse-content">
+              <h2 class="skill-title">Création de contenus graphiques originaux</h2>
+              <p>
+                Identité visuelle, logotypes, chartes graphiques, illustrations, icônes, animations, infographie, print et web.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </section> -->
+      <section class="contact">
+        <div class="grid-container">
+          <h2>Envie de nous rencontrer ?</h2>
+          <h3>À Mulhouse, Strasbourg, ou chez vous</h3>
+          <p>Nous sommes une équipe d’indépendants, mobiles sur toute l’alsace,  le grand-est et au-delà. Pourquoi pas dans vos locaux ?</p>
+          <p>
+            <a href="mailto:&#104;&#101;&#108;&#108;&#111;&#064;&#105;&#109;&#112;&#097;&#099;&#116;&#045;&#112;&#111;&#115;&#105;&#116;&#105;&#102;&#046;&#102;&#114;" class="button is-cta">
+              <svg class="icon"><use xlink:href="#icon-paper-plane" /></svg>
+              <span>Nous contacter</span>
+            </a>
+          </p>
+          <p>
+            <a href="tel:+33768931708">
+              <svg class="icon is-inline"><use xlink:href="#icon-mobile" /></svg> <span>+33 (0)7 68 93 17 08</span>
+            </a>
+          </p>
+          <!-- <a href="https://github.com/wearecube/frontend-cubie" class="is-social">
+            <svg class="icon is-big"><use xlink:href="#linkedin" /></svg>
+            <span class="is-hidden">Se joindre à nous sur LinkedIn</span>
+          </a>
+          <a href="https://twitter.com/WeAreCubeDesign" class="is-social">
+            <svg class="icon is-big"><use xlink:href="#twitter" /></svg>
+            <span class="is-hidden">Nous suivre sur Twitters</span>
+          </a> -->
         </div>
       </section>
     </main>
 
-    <aside class="sidebar-container" role="complementary">
+    <!-- <aside class="sidebar-container" role="complementary"></aside> -->
 
-    </aside>
-
-    <footer class="footer-container" role="contentinfo">
+    <footer class="footer" role="contentinfo">
       <div class="grid-container">
-        <p>Cubie was build by <a href="http://www.wearecube.ch/">We Are Cube.<sup>3</sup></a></p>
-        <p><small>Entypo pictograms by Daniel Bruce — <a href="http://www.entypo.com">www.entypo.com</a></small></p>
+        <dl>
+          <dt>Impact Positif</dt>
+          <dd>Collectif de designers indépendants basé en Alsace et spécialisé dans le design graphique, l'expérience utilisateur, l'ergonomie des interfaces et la communication.</dd>
+        </dl>
+        <p></p>
       </div>
     </footer>
 
@@ -119,15 +166,5 @@
     <script src="scripts/vendors.min.js"></script>
     <script src="scripts/main.min.js"></script>
 
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
   </body>
 </html>

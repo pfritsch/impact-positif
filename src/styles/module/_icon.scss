@@ -5,12 +5,16 @@
 [class^="icon"],
 [class*=" icon"] {
   display: inline-block;
-  width: rem-calc(24);
+  width: 1.25em;
   height: rem-calc(24);
   fill: currentColor;
-
   &.is-inline {
-    float: left;
+    vertical-align: middle;
+    margin-top: -4px;
     margin-right: rem-calc(6);
+  }
+  &.is-big {
+    width: rem-calc(48);
+    height: rem-calc(48);
   }
 }

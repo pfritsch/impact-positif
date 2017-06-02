@@ -1,14 +1,14 @@
 {
-  "name": "FrontendCubie",
-  "version": "1.0.0",
+  "name": "impact-positif",
+  "version": "0.0.1",
   "authors": [
-    "Pierre Fritsch <fritsch@puzzle.ch>"
+    "Pierre Fritsch <pierre@impact-positif.fr>"
   ],
-  "description": "Cubie is an HTML5 starter kit that includes: package and task management, local server with browser synchronization, beautiful auto-generated documentation, styles pre-processor, files minification and images optimisation",
-  "homepage": "http://www.wearecube.ch/frontendcubie/",
+  "description": "A one page website for Impact Positif",
+  "homepage": "http://impact-positif.fr/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wearecube/frontend-cubie.git"
+    "url": "https://github.com/pfritsch/impact-positif.git"
   },
   "license": "Apache-2.0",
   "ignore": [
@@ -22,10 +22,11 @@
     "hologram-github-theme": "~0.1.2"
   },
   "dependencies": {
-    "zepto": "~1.1.6",
+    "jquery": "^3.2.0",
+    "handlebars": "^4.0.5",
     "normalize-scss": "~3.0.3",
     "susy": "~2.2.2",
     "breakpoint-sass": "~2.5.0",
-    "modernizr": "~2.8.3"
+    "lazysizes": "^3.0.0"
   }
 }

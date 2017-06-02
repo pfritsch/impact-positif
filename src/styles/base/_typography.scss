@@ -28,27 +28,46 @@ Heading elements implement six levels of document headings, `<h1>` is the most i
 }
 
 h1, .h1 {
-  
+
 }
 
 h2, .h2 {
-  
+  font-weight: 600;
+  color: #928A97;
+  font-size: rem-calc(14);
+  line-height: rem-calc(36);
+  margin: rem-calc(36 0 0);
+  text-transform: uppercase;
+
+  @include susy-breakpoint($break-medium) {
+    font-size: rem-calc(17);
+    margin: rem-calc(72 0 0);
+  }
 }
 
 h3, .h3 {
-  
+  font-family: "Comfortaa", "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  line-height: rem-calc(36);
+  font-weight: 400;
+  font-size: rem-calc(24);
+  color: #283C63;
+  margin: 0;
+
+  @include susy-breakpoint($break-medium) {
+    font-size: rem-calc(28);
+  }
 }
 
 h4, .h4 {
-  
+
 }
 
 h5, .h5 {
-  
+
 }
 
 h6, .h6 {
-  
+
 }
 
 // Links
@@ -69,22 +88,45 @@ The HTML `<a>` Element (or the HTML Anchor Element) defines a hyperlink, the nam
 */
 
 a {
-  color: darken($color-secondary, 5%);
-  
+  font-weight: 600;
+  color: #E54A4A;
+  text-decoration: none;
+
   &:hover,
   &:active {
-    color: $color-primary;
+    text-decoration: underline;
   }
   &:visited {
 
   }
   &:focus {
-    
+
   }
 }
 
-// Horizontal lines
+// Paragraphs
 // ----------------------------------------------
-hr {
-  
+p {
+  font-size: rem-calc(16);
+  line-height: rem-calc(24);
+  margin: rem-calc(24 0 0);
+
+  @include susy-breakpoint($break-medium) {
+    font-size: rem-calc(18);
+    line-height: rem-calc(36);
+  }
+}
+p.hero {
+  font-weight: 600;
+  font-size: rem-calc(20);
+}
+
+// Lists
+// ----------------------------------------------
+dt {
+  font-weight: 600;
+}
+dd {
+  padding: 0;
+  margin: 0;
 }
