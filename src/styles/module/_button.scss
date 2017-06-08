@@ -90,3 +90,14 @@ a.button {
     }
   }
 }
+.button-icon {
+  display: inline-block;
+  line-height: 0;
+  svg {
+    transition: all 300ms ease;
+  }
+  &:hover > svg,
+  &:focus > svg {
+    transform: scale3d(0.90, 0.90, 0.90);
+  }
+}
