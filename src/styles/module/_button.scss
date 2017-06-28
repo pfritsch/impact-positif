@@ -56,7 +56,7 @@ a.button {
   &.is-cta {
     position: relative;
     overflow: hidden;
-    background-image: linear-gradient(-180deg, #EA5F51 0%, #E54A4A 100%);
+    background-image: linear-gradient(-180deg, #334982 0%, $color-primary 100%);
     border: none;
     border-radius: 3px;
     text-transform: uppercase;
@@ -95,6 +95,9 @@ a.button {
   line-height: 0;
   svg {
     transition: all 300ms ease;
+  }
+  &:hover {
+    cursor: pointer;
   }
   &:hover > svg,
   &:focus > svg {

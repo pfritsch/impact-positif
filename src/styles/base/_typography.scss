@@ -33,7 +33,7 @@ h1, .h1 {
 
 h2, .h2 {
   font-weight: 600;
-  color: #928A97;
+  color: darken($color-secondary, 15%);
   font-size: rem-calc(14);
   line-height: rem-calc(36);
   margin: rem-calc(36 0 0);
@@ -50,7 +50,7 @@ h3, .h3 {
   line-height: rem-calc(36);
   font-weight: 400;
   font-size: rem-calc(24);
-  color: #283C63;
+  color: $color-primary;
   margin: 0;
 
   @include susy-breakpoint($break-medium) {
@@ -89,7 +89,7 @@ The HTML `<a>` Element (or the HTML Anchor Element) defines a hyperlink, the nam
 
 a {
   font-weight: 600;
-  color: #E54A4A;
+  color: $color-primary;
   text-decoration: none;
 
   &:hover,

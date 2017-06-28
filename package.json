@@ -17,7 +17,7 @@
     "gulp": "^3.8.11",
     "gulp-autoprefixer": "^2.2.0",
     "gulp-clean": "^0.3.2",
-    "gulp-clean-css": "^3.0.3",
+    "gulp-clean-css": "^3.4.2",
     "gulp-concat": "^2.5.2",
     "gulp-header": "^1.2.2",
     "gulp-hologram": "^1.2.0",
